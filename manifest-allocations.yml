@@ -10,3 +10,11 @@ applications:
   services:
   - tracker-allocations-database
   - tracker-service-registry
+
+
+    cd ~/workspace/assignment-submission
+    ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery \
+    -PregistrationServerUrl=https://registration-pal-mummadi.apps.evans.pal.pivotal.io \
+    -PbacklogServerUrl=https://backlog-pal-mummadi.apps.evans.pal.pivotal.io \
+    -PallocationsServerUrl=https://allocations-pal-mummadi.apps.evans.pal.pivotal.io \
+    -PtimesheetsServerUrl=https://timesheets-pal-mummadi.apps.evans.pal.pivotal.io
